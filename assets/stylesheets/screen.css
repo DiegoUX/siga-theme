@@ -66,3 +66,129 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
+
+/* line 1, ../sass/_header.scss */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #555555;
+}
+
+/* line 8, ../sass/_header.scss */
+header {
+  font-family: 'Oswald', sans-serif;
+  border-bottom: 1px solid #cecece;
+  background: #FFFFFF;
+  padding: 15px 0;
+}
+/* line 15, ../sass/_header.scss */
+header .logo img {
+  width: 200px;
+  height: auto;
+}
+/* line 21, ../sass/_header.scss */
+header .navigations {
+  text-align: right;
+  text-transform: uppercase;
+}
+/* line 26, ../sass/_header.scss */
+header .navigations .top-nav ul {
+  margin-bottom: 15px;
+}
+/* line 29, ../sass/_header.scss */
+header .navigations .top-nav ul li {
+  display: inline-block;
+  margin-left: -4px;
+}
+/* line 34, ../sass/_header.scss */
+header .navigations .top-nav ul li.current-menu-item a {
+  background: #68bd1d;
+  color: #FFFFFF;
+}
+/* line 40, ../sass/_header.scss */
+header .navigations .top-nav ul li a {
+  color: #68bd1d;
+  font-size: 0.75rem;
+  border: 1px solid #68bd1d;
+  padding: 10px;
+  display: inline-block;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+/* line 52, ../sass/_header.scss */
+header .navigations .top-nav ul li a:hover {
+  text-decoration: none;
+  background: #68bd1d;
+  color: #FFFFFF;
+}
+/* line 64, ../sass/_header.scss */
+header .navigations nav ul li {
+  display: inline-block;
+  margin-left: 15px;
+}
+/* line 69, ../sass/_header.scss */
+header .navigations nav ul li.current-menu-item a {
+  color: #d17c0d;
+}
+/* line 74, ../sass/_header.scss */
+header .navigations nav ul li a {
+  color: #555555;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+/* line 82, ../sass/_header.scss */
+header .navigations nav ul li a:hover, header .navigations nav ul li a:focus {
+  color: #d17c0d;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 4, ../sass/_mediaqueries.scss */
+  header .logo img {
+    width: auto !important;
+    margin-top: 15px;
+  }
+  /* line 11, ../sass/_mediaqueries.scss */
+  header .navigations .top-nav ul li a {
+    font-size: 0,65rem;
+  }
+  /* line 15, ../sass/_mediaqueries.scss */
+  header .navigations nav ul li a {
+    font-size: 0.80rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 25, ../sass/_mediaqueries.scss */
+  header .hidden-md-up.mobile-btn {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+  }
+  /* line 31, ../sass/_mediaqueries.scss */
+  header .navigations {
+    text-align: center;
+    display: none;
+  }
+  /* line 35, ../sass/_mediaqueries.scss */
+  header .navigations nav {
+    margin-top: 30px;
+  }
+  /* line 39, ../sass/_mediaqueries.scss */
+  header .navigations nav ul li {
+    display: block;
+    margin-left: 0;
+    margin-top: 25px;
+    text-align: center;
+  }
+  /* line 48, ../sass/_mediaqueries.scss */
+  header .navigations .top-nav.mobile {
+    margin-top: 30px;
+  }
+}

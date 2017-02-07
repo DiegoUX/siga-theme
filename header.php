@@ -8,6 +8,8 @@
         <link href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon.ico" rel="shortcut icon">
         <link href="<?php echo get_template_directory_uri(); ?>/img/icons/touch.png" rel="apple-touch-icon-precomposed">
 
+        <link href="https://fonts.googleapis.com/css?family=Oswald:300,400|Roboto:300,400" rel="stylesheet">
+
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
         <link href="<?php echo get_template_directory_uri(); ?>/assets/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -32,26 +34,40 @@
 	</head>
 	<body <?php body_class(); ?>>
 
-		<!-- wrapper -->
-		<div class="wrapper">
-
-			<!-- header -->
-			<header class="header clear" role="banner">
-
+		
+		<!-- header -->
+		<header class="header clear sticky-top navbar-light" role="banner">
+			<div class="container">
+				<div class="row">
 					<!-- logo -->
-					<div class="logo">
+					<div class="logo col-md-3">
 						<a href="<?php echo home_url(); ?>">
 							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="logo-img">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/logo-siga.svg" alt="Logo" class="logo-img">
 						</a>
+						<div class="hidden-md-up mobile-btn">
+							<a href="#">
+								<i class="ion-navicon-round">BTN</i>
+							</a>
+						</div>
 					</div>
 					<!-- /logo -->
+					
+					<div class="col-md-9 navigations" id="navigations">
+						<div class="top-nav hidden-sm-down">
+							<?php wp_nav_menu( array( 'theme_location' => 'extra-menu' ) ); ?>
+						</div>
+						<!-- nav -->
+						<nav class="" role="navigation">
+							<?php html5blank_nav(); ?>
+						</nav>
+						<!-- /nav -->
+						<div class="top-nav mobile hidden-md-up">
+							<?php wp_nav_menu( array( 'theme_location' => 'extra-menu' ) ); ?>
+						</div>
+					</div>
+				</div>
+			</div>	
 
-					<!-- nav -->
-					<nav class="nav" role="navigation">
-						<?php html5blank_nav(); ?>
-					</nav>
-					<!-- /nav -->
-
-			</header>
-			<!-- /header -->
+		</header>
+		<!-- /header -->

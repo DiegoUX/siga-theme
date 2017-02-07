@@ -1,0 +1,53 @@
+@media only screen and (min-width:768px) and (max-width: 991px) {
+	header {
+		.logo {
+			img {
+				width: auto !important;
+				margin-top: 15px;
+			}
+		}
+
+		.navigations {
+			.top-nav ul li a {
+				font-size: 0,65rem;
+			}
+
+			nav ul li a {
+				font-size: 0.80rem;
+			}	
+		}
+	}	
+}
+
+@media only screen and (max-width:767px) {
+	header {
+
+		.hidden-md-up.mobile-btn {
+		    position: absolute;
+		    right: 30px;
+		    top: 20px;
+		}
+
+		.navigations {
+		    text-align: center;
+		    display: none;
+
+		    nav {
+		    	margin-top: 30px;
+
+		    	ul {
+		    		li {
+		    			display: block;
+					    margin-left: 0;
+					    margin-top: 25px;
+					    text-align: center;
+		    		}
+		    	}
+		    }
+
+		    .top-nav.mobile {
+		    	margin-top: 30px;
+		    }
+		}
+	}	
+}

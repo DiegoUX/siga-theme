@@ -4,7 +4,10 @@
 		
 		'use strict';
 		
-		// DOM ready, take it away
+		// Mobile menu...
+		$(".mobile-btn a").click(function(event) {
+			$("#navigations").slideToggle(400);
+		});
 		
 	});
 	
