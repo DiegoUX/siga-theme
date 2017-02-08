@@ -5,3 +5,59 @@ $darkGreen: #495b46;
 $green: #68bd1d;
 
 $orange: #d17c0d;
+
+$beige: #eae1c5;
+
+$brown: #9b8e65;
+
+// Helpers...
+.tac { text-align: center;}
+
+// Botones...
+
+.btn {
+	font-family: 'Oswald', sans-serif;
+	border-radius: 0;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	padding: 0.6rem 1.6rem;
+
+	&:focus {
+		box-shadow: none;
+		color: #FFFFFF;
+	}
+}
+
+.btn-main {
+	background: $orange;
+
+	&:hover {
+		color: #FFFFFF;
+		background: #EF8B10;
+	}
+}
+
+.btn-invert {
+	background: transparent;
+	border-color: #FFFFFF;
+	border-width: 2px;
+
+	&:hover {
+		background: #EF8B10;
+		color: #FFFFFF;
+		border-color: #EF8B10;
+	}
+}
+
+// Titulos...
+
+h2 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 32px;
+	margin-bottom: 30px;
+}
+
+h4 {
+	font-size: 18px;
+	line-height: 24px;
+}

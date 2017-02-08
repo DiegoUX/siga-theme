@@ -16,16 +16,42 @@
 				font-size: 0.80rem;
 			}	
 		}
-	}	
+	}
+	.billboard {
+		.square-hero {
+			top: -425px;
+		}
+	}
 }
 
 @media only screen and (max-width:767px) {
 	header {
+		position: static !important;
+
+		.logo {
+			img {
+				width: 160px;
+			}
+		}
 
 		.hidden-md-up.mobile-btn {
 		    position: absolute;
-		    right: 30px;
-		    top: 20px;
+		    right: 15px;
+		    top: 7px;
+
+		    a {
+			    i {
+			    	color: $orange;
+				    display: block;
+				    font-size: 60px;
+			    }
+
+			    &:hover,
+			    &:focus {
+			    	text-decoration: none;
+			    	outline: none;
+			    }
+		    }
 		}
 
 		.navigations {
@@ -33,7 +59,7 @@
 		    display: none;
 
 		    nav {
-		    	margin-top: 30px;
+		    	margin-top: 45px;
 
 		    	ul {
 		    		li {
@@ -46,8 +72,28 @@
 		    }
 
 		    .top-nav.mobile {
-		    	margin-top: 30px;
+		    	margin-top: 45px;
 		    }
 		}
 	}	
+
+	.billboard {
+		// height: 500px;
+
+		.square-hero {
+			top: -475px;
+			margin-left: 10px;
+			margin-right: 10px;
+			padding: 30px 15px;
+
+			h1 {
+				font-size: 32px;
+				margin-bottom: 20px;
+			}
+
+			h4 {
+				margin-bottom: 20px;
+			}
+		}
+	}
 }

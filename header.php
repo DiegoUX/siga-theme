@@ -8,7 +8,7 @@
         <link href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon.ico" rel="shortcut icon">
         <link href="<?php echo get_template_directory_uri(); ?>/img/icons/touch.png" rel="apple-touch-icon-precomposed">
 
-        <link href="https://fonts.googleapis.com/css?family=Oswald:300,400|Roboto:300,400" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald:300,400|Roboto:300,400|Roboto+Condensed:400,700" rel="stylesheet">
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
@@ -47,7 +47,7 @@
 						</a>
 						<div class="hidden-md-up mobile-btn">
 							<a href="#">
-								<i class="ion-navicon-round">BTN</i>
+								<i class="icon icon-arrows-hamburger-2"></i>
 							</a>
 						</div>
 					</div>

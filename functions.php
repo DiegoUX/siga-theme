@@ -129,6 +129,13 @@ function html5blank_styles()
     wp_register_style('normalize', get_template_directory_uri() . '/normalize.css', array(), '1.0', 'all');
     wp_enqueue_style('normalize'); // Enqueue it!
 
+    wp_register_style('linea-arrows', get_template_directory_uri() . '/fonts/linea-arrows.css', array(), '1.0', 'all');
+    wp_enqueue_style('linea-arrows'); // Enqueue it!
+    // wp_register_style('linea-software', get_template_directory_uri() . '/fonts/linea-software.css', array(), '1.0', 'all');
+    // wp_enqueue_style('linea-software'); // Enqueue it!
+    // wp_register_style('linea-basic', get_template_directory_uri() . '/fonts/linea-basic.css', array(), '1.0', 'all');
+    // wp_enqueue_style('linea-basic'); // Enqueue it!
+
     // wp_register_style('html5blank', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
     // wp_enqueue_style('html5blank'); // Enqueue it!
 }
