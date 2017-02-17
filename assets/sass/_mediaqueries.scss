@@ -1,3 +1,16 @@
+@media only screen and (max-width:991px) {
+	.services {
+		
+		.two-top-services {
+			margin-bottom: 60px;
+		}
+
+		// p {
+		// 	padding: 0;
+		// }
+	}
+}	
+
 @media only screen and (min-width:768px) and (max-width: 991px) {
 	header {
 		.logo {
@@ -22,6 +35,25 @@
 			top: -425px;
 		}
 	}
+
+	footer {
+		
+		.form-contacto {
+			.wpcf7-form {
+				label {
+					width: 100%;
+				}	
+			} 
+		}
+
+		.servicio-contacto {
+		    left: 0;
+		    margin-left: 0;
+		    margin-top: 0;
+		    position: absolute;
+		    top: 415px;
+		}
+	}	
 }
 
 @media only screen and (max-width:767px) {
@@ -93,6 +125,56 @@
 
 			h4 {
 				margin-bottom: 20px;
+			}
+		}
+	}
+
+	.services {
+		.mbl-mgn {
+			margin-bottom: 60px;
+		}
+	}
+
+	.help-you,
+	.recursos {
+		.tac {
+			text-align: left;
+		}
+	}
+
+	footer {
+		
+		.form-contacto {
+			margin-top: 65px;
+
+			.wpcf7-form {
+				label {
+					width: 100%;
+				}	
+			} 
+		}
+
+		.servicio-contacto {
+		    margin-top: 20px;
+		}
+	}
+}
+
+@media only screen and (min-width:576px) and (max-width:768px) {
+	.services {
+		.mbl-mgn {
+			p {
+				padding: 0;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width:575px) {
+	.services {
+		.mbl-mgn {
+			p {
+				padding: 0 35px;
 			}
 		}
 	}

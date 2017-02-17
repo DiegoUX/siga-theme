@@ -604,26 +604,30 @@ header .navigations nav ul li a:hover, header .navigations nav ul li a:focus {
 .section {
   padding: 70px 0;
 }
+/* line 36, ../sass/_home.scss */
+.section h2 {
+  line-height: 42px;
+}
 
-/* line 37, ../sass/_home.scss */
+/* line 41, ../sass/_home.scss */
 .services {
   background: #F4EDDA;
   text-align: center;
 }
-/* line 41, ../sass/_home.scss */
+/* line 45, ../sass/_home.scss */
 .services h2 {
   color: #495b46;
   text-transform: uppercase;
 }
-/* line 46, ../sass/_home.scss */
+/* line 50, ../sass/_home.scss */
 .services h4 {
   margin-bottom: 60px;
 }
-/* line 50, ../sass/_home.scss */
+/* line 54, ../sass/_home.scss */
 .services img {
   margin-bottom: 10px;
 }
-/* line 54, ../sass/_home.scss */
+/* line 58, ../sass/_home.scss */
 .services h3 {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 18px;
@@ -633,124 +637,336 @@ header .navigations nav ul li a:hover, header .navigations nav ul li a:focus {
   line-height: normal;
   margin-bottom: 20px;
 }
-/* line 64, ../sass/_home.scss */
+/* line 68, ../sass/_home.scss */
 .services p {
   line-height: normal;
   margin-bottom: 25px;
   padding: 0 35px;
 }
 
-/* line 71, ../sass/_home.scss */
+/* line 75, ../sass/_home.scss */
 .help-you {
   background-color: #9b8e65;
   color: #eae1c5;
 }
-/* line 75, ../sass/_home.scss */
+/* line 79, ../sass/_home.scss */
 .help-you h2 {
   text-transform: uppercase;
 }
-/* line 79, ../sass/_home.scss */
+/* line 83, ../sass/_home.scss */
 .help-you a {
   margin-top: 45px;
   margin-right: 40px;
 }
 
-/* line 85, ../sass/_home.scss */
+/* line 89, ../sass/_home.scss */
 .recursos {
   background-color: #a36b05;
   color: #eae1c5;
 }
-/* line 89, ../sass/_home.scss */
+/* line 93, ../sass/_home.scss */
 .recursos h2 {
   text-transform: uppercase;
 }
-/* line 93, ../sass/_home.scss */
+/* line 97, ../sass/_home.scss */
 .recursos a {
   margin-right: 15px;
   margin-top: 45px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+/* line 1, ../sass/_footer.scss */
+footer {
+  background-color: #333333;
+}
+/* line 4, ../sass/_footer.scss */
+footer.section {
+  padding-bottom: 0;
+}
+/* line 8, ../sass/_footer.scss */
+footer .contact-title {
+  margin-bottom: 40px;
+}
+/* line 11, ../sass/_footer.scss */
+footer .contact-title h2 {
+  color: #d17c0d;
+  text-transform: uppercase;
+}
+/* line 16, ../sass/_footer.scss */
+footer .contact-title h4 {
+  color: #eae1c5;
+}
+/* line 22, ../sass/_footer.scss */
+footer .info-contacto img {
+  margin-bottom: 30px;
+  width: 130px;
+}
+/* line 27, ../sass/_footer.scss */
+footer .info-contacto h5 {
+  color: #eae1c5;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  line-height: 120%;
+}
+/* line 36, ../sass/_footer.scss */
+footer .info-contacto p {
+  font-size: 14px;
+  color: #eae1c5;
+  margin-bottom: 5px;
+}
+/* line 42, ../sass/_footer.scss */
+footer .info-contacto .tel {
+  margin-top: 30px;
+}
+/* line 46, ../sass/_footer.scss */
+footer .info-contacto a {
+  color: #68bd1d;
+  font-size: 14px;
+}
+/* line 50, ../sass/_footer.scss */
+footer .info-contacto a:hover {
+  text-decoration: underline;
+}
+/* line 56, ../sass/_footer.scss */
+footer .form-contacto {
+  margin-bottom: 30px;
+  margin-top: 25px;
+}
+/* line 62, ../sass/_footer.scss */
+footer .form-contacto .wpcf7-form label {
+  color: #eae1c5;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+/* line 67, ../sass/_footer.scss */
+footer .form-contacto .wpcf7-form label i {
+  font-style: italic;
+}
+/* line 72, ../sass/_footer.scss */
+footer .form-contacto .wpcf7-form .wpcf7-text, footer .form-contacto .wpcf7-form .wpcf7-textarea {
+  background-color: #555555;
+  width: 100%;
+  border: none;
+  margin: 5px 0;
+  color: #FFFFFF;
+  padding: 12px 15px;
+}
+/* line 81, ../sass/_footer.scss */
+footer .form-contacto .wpcf7-form .req {
+  margin-top: -15px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-style: italic;
+}
+/* line 90, ../sass/_footer.scss */
+footer .form-contacto div.wpcf7-response-output {
+  margin: 2em 0 1em;
+  padding: 0.5em 1em;
+  color: #eae1c5;
+  line-height: normal;
+}
+/* line 97, ../sass/_footer.scss */
+footer .form-contacto div.wpcf7-validation-errors {
+  border-color: #eae1c5;
+}
+/* line 101, ../sass/_footer.scss */
+footer .form-contacto span.wpcf7-not-valid-tip {
+  color: #e0532c;
+  display: block;
+  font-size: 0.9em;
+  font-weight: 600;
+}
+/* line 108, ../sass/_footer.scss */
+footer .form-contacto div.wpcf7-mail-sent-ok {
+  border: 2px solid #68bd1d;
+}
+/* line 113, ../sass/_footer.scss */
+footer .servicio-contacto {
+  margin-top: 120px;
+}
+/* line 117, ../sass/_footer.scss */
+footer .servicio-contacto img {
+  margin-bottom: 15px;
+}
+/* line 121, ../sass/_footer.scss */
+footer .servicio-contacto p {
+  color: #eae1c5;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 5px;
+}
+/* line 128, ../sass/_footer.scss */
+footer .servicio-contacto a {
+  color: #68bd1d;
+  font-size: 14px;
+}
+/* line 132, ../sass/_footer.scss */
+footer .servicio-contacto a:hover {
+  text-decoration: underline;
+}
+/* line 138, ../sass/_footer.scss */
+footer .bottom-foo {
+  padding: 10px 0;
+  margin-top: 30px;
+  background-color: #222222;
+  color: #eae1c5;
+  font-size: 12px;
+}
+/* line 145, ../sass/_footer.scss */
+footer .bottom-foo .credit {
+  text-align: right;
+}
+/* line 148, ../sass/_footer.scss */
+footer .bottom-foo .credit a {
+  color: #FFCC00;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+/* line 156, ../sass/_footer.scss */
+footer .bottom-foo .credit a:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 991px) {
   /* line 4, ../sass/_mediaqueries.scss */
+  .services .two-top-services {
+    margin-bottom: 60px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 17, ../sass/_mediaqueries.scss */
   header .logo img {
     width: auto !important;
     margin-top: 15px;
   }
-  /* line 11, ../sass/_mediaqueries.scss */
+  /* line 24, ../sass/_mediaqueries.scss */
   header .navigations .top-nav ul li a {
     font-size: 0,65rem;
   }
-  /* line 15, ../sass/_mediaqueries.scss */
+  /* line 28, ../sass/_mediaqueries.scss */
   header .navigations nav ul li a {
     font-size: 0.80rem;
   }
 
-  /* line 21, ../sass/_mediaqueries.scss */
+  /* line 34, ../sass/_mediaqueries.scss */
   .billboard .square-hero {
     top: -425px;
   }
+
+  /* line 43, ../sass/_mediaqueries.scss */
+  footer .form-contacto .wpcf7-form label {
+    width: 100%;
+  }
+  /* line 49, ../sass/_mediaqueries.scss */
+  footer .servicio-contacto {
+    left: 0;
+    margin-left: 0;
+    margin-top: 0;
+    position: absolute;
+    top: 415px;
+  }
 }
 @media only screen and (max-width: 767px) {
-  /* line 28, ../sass/_mediaqueries.scss */
+  /* line 60, ../sass/_mediaqueries.scss */
   header {
     position: static !important;
   }
-  /* line 32, ../sass/_mediaqueries.scss */
+  /* line 64, ../sass/_mediaqueries.scss */
   header .logo img {
     width: 160px;
   }
-  /* line 37, ../sass/_mediaqueries.scss */
+  /* line 69, ../sass/_mediaqueries.scss */
   header .hidden-md-up.mobile-btn {
     position: absolute;
     right: 15px;
     top: 7px;
   }
-  /* line 43, ../sass/_mediaqueries.scss */
+  /* line 75, ../sass/_mediaqueries.scss */
   header .hidden-md-up.mobile-btn a i {
     color: #d17c0d;
     display: block;
     font-size: 60px;
   }
-  /* line 49, ../sass/_mediaqueries.scss */
+  /* line 81, ../sass/_mediaqueries.scss */
   header .hidden-md-up.mobile-btn a:hover, header .hidden-md-up.mobile-btn a:focus {
     text-decoration: none;
     outline: none;
   }
-  /* line 57, ../sass/_mediaqueries.scss */
+  /* line 89, ../sass/_mediaqueries.scss */
   header .navigations {
     text-align: center;
     display: none;
   }
-  /* line 61, ../sass/_mediaqueries.scss */
+  /* line 93, ../sass/_mediaqueries.scss */
   header .navigations nav {
     margin-top: 45px;
   }
-  /* line 65, ../sass/_mediaqueries.scss */
+  /* line 97, ../sass/_mediaqueries.scss */
   header .navigations nav ul li {
     display: block;
     margin-left: 0;
     margin-top: 25px;
     text-align: center;
   }
-  /* line 74, ../sass/_mediaqueries.scss */
+  /* line 106, ../sass/_mediaqueries.scss */
   header .navigations .top-nav.mobile {
     margin-top: 45px;
   }
 
-  /* line 83, ../sass/_mediaqueries.scss */
+  /* line 115, ../sass/_mediaqueries.scss */
   .billboard .square-hero {
     top: -475px;
     margin-left: 10px;
     margin-right: 10px;
     padding: 30px 15px;
   }
-  /* line 89, ../sass/_mediaqueries.scss */
+  /* line 121, ../sass/_mediaqueries.scss */
   .billboard .square-hero h1 {
     font-size: 32px;
     margin-bottom: 20px;
   }
-  /* line 94, ../sass/_mediaqueries.scss */
+  /* line 126, ../sass/_mediaqueries.scss */
   .billboard .square-hero h4 {
     margin-bottom: 20px;
+  }
+
+  /* line 133, ../sass/_mediaqueries.scss */
+  .services .mbl-mgn {
+    margin-bottom: 60px;
+  }
+
+  /* line 140, ../sass/_mediaqueries.scss */
+  .help-you .tac,
+  .recursos .tac {
+    text-align: left;
+  }
+
+  /* line 147, ../sass/_mediaqueries.scss */
+  footer .form-contacto {
+    margin-top: 65px;
+  }
+  /* line 151, ../sass/_mediaqueries.scss */
+  footer .form-contacto .wpcf7-form label {
+    width: 100%;
+  }
+  /* line 157, ../sass/_mediaqueries.scss */
+  footer .servicio-contacto {
+    margin-top: 20px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  /* line 166, ../sass/_mediaqueries.scss */
+  .services .mbl-mgn p {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 575px) {
+  /* line 176, ../sass/_mediaqueries.scss */
+  .services .mbl-mgn p {
+    padding: 0 35px;
   }
 }

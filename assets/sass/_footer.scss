@@ -1,0 +1,163 @@
+footer {
+	background-color: #333333;
+	
+	&.section {
+		padding-bottom: 0;
+	}
+
+	.contact-title {
+		margin-bottom: 40px;
+
+		h2 {
+			color: $orange;
+			text-transform: uppercase;
+		}
+
+		h4 {
+			color: $beige;
+		}
+	}
+
+	.info-contacto {
+		img {
+			margin-bottom: 30px;
+			width: 130px;
+		}
+
+		h5 {
+			color: $beige;
+			font-size: 14px;
+			text-transform: uppercase;
+			margin-bottom: 30px;
+			line-height: 120%;
+
+		}
+
+		p {
+			font-size: 14px;
+			color: $beige;
+			margin-bottom: 5px;
+		}
+
+		.tel {
+			margin-top: 30px;
+		}
+
+		a {
+			color: $green;
+			font-size: 14px;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.form-contacto {
+		margin-bottom: 30px;
+    	margin-top: 25px;
+
+		.wpcf7-form {
+
+			label {
+				color: $beige;
+				font-size: 14px;
+				margin-bottom: 15px;
+
+				i {
+					font-style: italic;
+				}
+			}
+
+			.wpcf7-text, .wpcf7-textarea {
+				background-color: #555555;
+				width: 100%;
+				border: none;
+				margin: 5px 0;
+				color: #FFFFFF;
+				padding: 12px 15px;
+			}
+
+			.req {
+				margin-top: -15px;
+				margin-bottom: 20px;
+				font-size: 14px;
+				font-style: italic;
+			}
+		}
+
+		// mjes
+		div.wpcf7-response-output {
+		    margin: 2em 0 1em;
+		    padding: 0.5em 1em;
+		    color: #eae1c5;
+		    line-height: normal;
+		}
+
+		div.wpcf7-validation-errors {
+			border-color: #eae1c5;
+		}
+
+		span.wpcf7-not-valid-tip {
+		    color: #e0532c;
+		    display: block;
+		    font-size: 0.9em;
+		    font-weight: 600;
+		}
+
+		div.wpcf7-mail-sent-ok {
+		    border: 2px solid $green;
+		}
+	}
+
+	.servicio-contacto {
+		// margin-top: 25px;
+		margin-top: 120px;	
+
+		img {
+			margin-bottom: 15px;
+		}
+    	
+    	p {
+    		color: $beige;
+    		font-size: 14px;
+    		line-height: 18px;
+    		margin-bottom: 5px;
+    	}
+
+    	a {
+			color: $green;
+			font-size: 14px;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.bottom-foo {
+		padding: 10px 0;
+		margin-top: 30px;
+		background-color: #222222;
+		color: $beige;
+		font-size: 12px;
+
+		.credit {
+			text-align: right;
+
+			a {
+				color: #FFCC00;
+				-webkit-transition: all 0.4s ease;
+				-moz-transition: all 0.4s ease;
+				-ms-transition: all 0.4s ease;
+				-o-transition: all 0.4s ease;
+				transition: all 0.4s ease;
+
+				&:hover {
+					opacity: 0.7;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
