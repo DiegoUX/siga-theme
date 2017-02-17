@@ -86,7 +86,23 @@
 	}
 }
 
-.recursos {
+.our-work {
+	background-color: $darkDarkGreen;
+	color: $beige;
+	text-align: center;
+
+	h2 {
+		text-transform: uppercase;
+	}
+
+	img {
+		display: block;
+		margin: 50px auto;
+		width: 100%;
+	}
+}
+
+.resources {
 	background-color: #a36b05;
 	color: $beige;
 

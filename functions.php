@@ -99,17 +99,20 @@ function html5blank_header_scripts()
         wp_enqueue_script('modernizr'); // Enqueue it!
 
 
-        wp_register_script('jQuery', 'https://code.jquery.com/jquery-3.1.1.slim.min.js', false, '3.1.1.slim', true);
+        wp_register_script('jQuery', get_template_directory_uri() . 'js/lib/jquery-3.1.1.slim.min.js', false, '3.1.1.slim', true);
         wp_enqueue_script('jQuery'); // Enqueue it!
 
-        wp_register_script('tether-js', 'https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js', false, '1.4.0', true);
+        wp_register_script('tether-js', get_template_directory_uri() . '/js/lib/tether.min.js', false, '1.4.0', true);
         wp_enqueue_script('tether-js'); // Enqueue it!
 
-        wp_register_script('bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js', false, '4.0.0.alpha6', true);
+        wp_register_script('bootstrap-js', get_template_directory_uri() . '/js/lib/bootstrap.min.js', false, '4.0.0.alpha6', true);
         wp_enqueue_script('bootstrap-js'); // Enqueue it!
 
+        wp_register_script('smooth-scroll', get_template_directory_uri() . '/js/lib/smooth-scroll.min.js', false, '10.2.0', true); // Smooth-scroll
+        wp_enqueue_script('smooth-scroll'); // Enqueue it!
 
-        wp_register_script('html5blankscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
+
+        wp_register_script('html5blankscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0', true); // Custom scripts
         wp_enqueue_script('html5blankscripts'); // Enqueue it!
     }
 }
@@ -206,6 +209,39 @@ if (function_exists('register_sidebar'))
         'name' => __('Widget Area 2', 'html5blank'),
         'description' => __('Description for this widget-area...', 'html5blank'),
         'id' => 'widget-area-2',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+
+    // Define Sidebar Widget Footer 1
+    register_sidebar(array(
+        'name' => __('Widget Footer 1', 'html5blank'),
+        'description' => __('Footer Columna 1', 'html5blank'),
+        'id' => 'widget-foo-1',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+
+    // Define Sidebar Widget Footer 2
+    register_sidebar(array(
+        'name' => __('Widget Footer 2', 'html5blank'),
+        'description' => __('Footer Columna 2', 'html5blank'),
+        'id' => 'widget-foo-2',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+
+    // Define Sidebar Widget Footer 3
+    register_sidebar(array(
+        'name' => __('Widget Footer 3', 'html5blank'),
+        'description' => __('Footer Columna 3', 'html5blank'),
+        'id' => 'widget-foo-3',
         'before_widget' => '<div id="%1$s" class="%2$s">',
         'after_widget' => '</div>',
         'before_title' => '<h3>',

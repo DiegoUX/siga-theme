@@ -30,7 +30,7 @@
 								<div class="square-hero">
 									<h1>información geográfica más accesible</h1>
 									<h4>Gestionamos y procesamos información ambiental, social y productiva,<br> para definir pautas para la conservación de la biodiversidad<br> y el manejo responsable de los recursos naturales.</h4>
-									<a href="#" class="btn btn-main">Conocenos</a>
+									<a href="/quienes-somos" class="btn btn-main">Conocenos</a>
 								</div>
 							</div>
 						</div>
@@ -85,7 +85,19 @@
 						</div>
 					</div>
 				</section>
-				<section class="recursos section">
+				<section class="our-work section">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-10 offset-lg-1">
+								<h2>Trabajamos para lograr mejores resultados</h2>
+								<h4>Los sistemas de información geográfica son la mejor herramienta para organizar, analizar y presentar la información relacionada a la planificación territorial.</h4>
+								<img src="../wp-content/themes/siga-theme/img/trabajos-img.png" alt="Trabajos">
+								<a href="/trabajos" class="btn btn-main">Ver Trabajos</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="resources section">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-9">
@@ -93,7 +105,7 @@
 								<h4>Accedé de forma gratuita a mapas y archivos GIS del subtrópico de Argentina. Optimizá tu proyecto con información precisa y actualizada de la región.</h4>
 							</div>
 							<div class="col-md-3 tac">
-								<a href="#" class="btn btn-invert">Recursos</a>
+								<a href="/recursos" class="btn btn-invert">Recursos</a>
 							</div>
 						</div>
 					</div>

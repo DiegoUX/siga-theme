@@ -67,12 +67,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 14, ../sass/_variables.scss */
+/* line 15, ../sass/_variables.scss */
 .tac {
   text-align: center;
 }
 
-/* line 18, ../sass/_variables.scss */
+/* line 19, ../sass/_variables.scss */
 .btn {
   font-family: 'Oswald', sans-serif;
   border-radius: 0;
@@ -80,43 +80,43 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   text-transform: uppercase;
   padding: 0.6rem 1.6rem;
 }
-/* line 25, ../sass/_variables.scss */
+/* line 26, ../sass/_variables.scss */
 .btn:focus {
   box-shadow: none;
   color: #FFFFFF;
 }
 
-/* line 31, ../sass/_variables.scss */
+/* line 32, ../sass/_variables.scss */
 .btn-main {
   background: #d17c0d;
 }
-/* line 34, ../sass/_variables.scss */
+/* line 35, ../sass/_variables.scss */
 .btn-main:hover {
   color: #FFFFFF;
   background: #EF8B10;
 }
 
-/* line 40, ../sass/_variables.scss */
+/* line 41, ../sass/_variables.scss */
 .btn-invert {
   background: transparent;
   border-color: #FFFFFF;
   border-width: 2px;
 }
-/* line 45, ../sass/_variables.scss */
+/* line 46, ../sass/_variables.scss */
 .btn-invert:hover {
   background: #EF8B10;
   color: #FFFFFF;
   border-color: #EF8B10;
 }
 
-/* line 54, ../sass/_variables.scss */
+/* line 55, ../sass/_variables.scss */
 h2 {
   font-family: 'Oswald', sans-serif;
   font-size: 32px;
   margin-bottom: 30px;
 }
 
-/* line 60, ../sass/_variables.scss */
+/* line 61, ../sass/_variables.scss */
 h4 {
   font-size: 18px;
   line-height: 24px;
@@ -660,16 +660,33 @@ header .navigations nav ul li a:hover, header .navigations nav ul li a:focus {
 }
 
 /* line 89, ../sass/_home.scss */
-.recursos {
+.our-work {
+  background-color: #0a2711;
+  color: #eae1c5;
+  text-align: center;
+}
+/* line 94, ../sass/_home.scss */
+.our-work h2 {
+  text-transform: uppercase;
+}
+/* line 98, ../sass/_home.scss */
+.our-work img {
+  display: block;
+  margin: 50px auto;
+  width: 100%;
+}
+
+/* line 105, ../sass/_home.scss */
+.resources {
   background-color: #a36b05;
   color: #eae1c5;
 }
-/* line 93, ../sass/_home.scss */
-.recursos h2 {
+/* line 109, ../sass/_home.scss */
+.resources h2 {
   text-transform: uppercase;
 }
-/* line 97, ../sass/_home.scss */
-.recursos a {
+/* line 113, ../sass/_home.scss */
+.resources a {
   margin-right: 15px;
   margin-top: 45px;
 }
