@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php /* Template Name: Quienes Somos */ get_header(); ?>
 
 	<main role="main">
 		<!-- section -->
@@ -7,8 +7,6 @@
 				<?php
 				$thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large');
 				?>
-
-				<!-- <div class="page-billboard" style="height:<?php echo $thumbnail[2]; ?>px;background-image:url(<?php echo $thumbnail[0]; ?>);background-repeat:no-repeat;"> -->
 				<div class="page-billboard" style="background-image:url(<?php echo $thumbnail[0]; ?>);background-repeat:no-repeat;">
 
 					<div class="container">
@@ -91,8 +89,72 @@
 
 		<?php endif; ?>
 
+
+		<!-- Sección Miembros del Equipo -->
+		<?php
+
+		the_post();
+
+		// Get 'team' posts
+		$team_posts = get_posts( array(
+			'post_type' => 'equipo',
+			'posts_per_page' => 10, // Unlimited posts
+			'order' => 'ASC', // Order alphabetically by name
+		) );
+
+		if ( $team_posts ):
+		?>
+		<div class="container">
+			<div class="row">
+				<div class="intro-equipo col-md-10 offset-md-1">
+					<h2>El Equipo de Siga Proyungas</h2>
+					<h4>Dolor sit amet, vix deleniti maiestatis no, cu summo adversarium consectetuer vis. Duo falli quodsi eripuit ne. In assum ignota indoctum usu, est ei sale rebum voluptatibus, eu quo iusto mnesarchum. Pro quis magna regione eu. Vis ex choro saepe. Ubique blandit cu duo. Placerat adipiscing te vis, fastidii legendos vel in, ea nobis feugait praesent mea.</h4>
+				</div>
+			</div><!-- /.row -->	
+			<div class="profiles" id="accordion" aria-multiselectable="true">
+				<?php 
+				$count=0;
+				foreach ( $team_posts as $post ): 
+				setup_postdata($post);
+				
+				// Resize and CDNize thumbnails using Automattic Photon service
+				$thumb_src = null;
+				if ( has_post_thumbnail($post->ID) ) {
+					$src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'team-thumb' );
+					$thumb_src = $src[0];
+				}
+				?>
+
+				<article class="col-profile">
+					<div class="profile-header">
+						<?php if ( $thumb_src ): ?>
+						<img src="<?php echo $thumb_src; ?>" alt="<?php the_title(); ?>, <?php the_field('area'); ?>" class="img-circle">
+						<?php endif; ?>
+					</div>
+					
+					<div class="profile-content">
+						<h3><?php the_title(); ?></h3>
+						<h5 class="area-position"><?php the_field('area'); ?></h5>	
+
+						<?php echo '<a data-toggle="collapse" data-parent="#accordion" href="#collapse-' .$count. '" aria-expanded="false" aria-controls="#collapse-' .$count. '">' ?>Ver Más</a>
+						<?php echo '<div id="collapse-' .$count. '" class="collapse member-detail">' ?>
+							<?php the_content(); ?>
+						</div>
+					</div>
+					
+				</article><!-- /.col-profile -->
+				<?php $count++; ?>
+				<?php endforeach; ?>
+			</div>	
+			
+		</div><!-- /.container -->
+		<?php endif; ?>
+
+
+
+
+
 		</section>
 		<!-- /section -->
 	</main>
-
 <?php get_footer(); ?>

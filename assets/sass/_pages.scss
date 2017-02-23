@@ -1,0 +1,116 @@
+.page-billboard {
+	background-size: cover;
+	background-color: $darkDarkGreen;
+	background-position: 0 0;
+	height: 350px;
+
+
+	.square-hero-page {
+		padding: 40px 35px;
+		text-align: center;
+		position: absolute;
+		margin-right: 30px;
+		margin-left: 30px;
+		left: 0;
+		right: 0;
+		top: 60px;
+		border: 3px solid $beige;
+		color: $beige;
+
+		h1 {
+			font-family: 'Oswald', sans-serif;
+			text-transform: uppercase;
+			font-size: 36px;
+			line-height: 44px;
+			margin-top: 0;
+			margin-bottom: 30px;
+		}
+
+		h4 {
+			font-size: 18px;
+			line-height: 24px;
+		}
+	}
+}
+
+
+.quienes-somos {
+	h2 {
+		color: $darkGreen;
+		line-height: 42px;
+		text-transform: uppercase;
+	}
+
+	.main-activities {
+		background: url('../../img/pattern.png') repeat scroll 0 0 #f4eedb;
+		padding: 70px 0;
+
+		.ma-list {
+			text-align: center;
+			padding-top: 60px;
+			
+			> div {
+				padding: 0 35px;
+			}
+
+			.icon {
+				color: $orange;
+				display: inline-block;
+			    font-size: 50px;
+			    margin-bottom: 20px;
+			}
+		}
+	}
+
+	.siga-info {
+		background: url('../../img/siga-info.jpg') no-repeat scroll right bottom #647686;
+		background-size: cover;
+		padding: 70px 0;
+		height: 550px;
+
+		h2 {
+			color: $beige;
+		}
+
+		h4 {
+			color: $beige;
+			margin-bottom: 20px;
+		}
+	}
+
+	.intro-equipo {
+		text-align: center;
+		padding: 70px 0;
+	}
+
+	.profiles {
+		text-align: center;
+
+		.col-profile {
+			display: inline-block;
+			width: 270px;
+			padding: 0 25px;
+			vertical-align: top;
+
+			.profile-content {
+				h3 {
+					font-family: 'Roboto Condensed', sans-serif;
+					text-transform: uppercase;
+					color: $orange;
+					font-size: 18px;
+					font-weight: 700;
+					margin: 20px 0 10px;
+				}
+
+				h5.area-position {
+					font-size: 16px;
+					color: $gray;
+				}
+
+				.member-detail {
+					text-align: left;
+				}
+			}
+		}
+	}
+}
