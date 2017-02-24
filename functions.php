@@ -99,7 +99,7 @@ function html5blank_header_scripts()
         wp_enqueue_script('modernizr'); // Enqueue it!
 
 
-        wp_register_script('jQuery', get_template_directory_uri() . '/js/lib/jquery-3.1.1.min.js', false, '3.1.1.slim', true);
+        wp_register_script('jQuery', get_template_directory_uri() . '/js/lib/jquery-3.1.1.min.js', false, '3.1.1');
         wp_enqueue_script('jQuery'); // Enqueue it!
 
         wp_register_script('tether-js', get_template_directory_uri() . '/js/lib/tether.min.js', false, '1.4.0', true);

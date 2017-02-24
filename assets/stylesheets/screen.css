@@ -678,14 +678,15 @@ header .navigations nav ul li a:hover, header .navigations nav ul li a:focus {
 
 /* line 105, ../sass/_home.scss */
 .resources {
-  background-color: #a36b05;
+  background: url("../../img/bg-resources.jpg") no-repeat scroll 0 0 #a36b05;
+  background-size: cover;
   color: #eae1c5;
 }
-/* line 109, ../sass/_home.scss */
+/* line 110, ../sass/_home.scss */
 .resources h2 {
   text-transform: uppercase;
 }
-/* line 113, ../sass/_home.scss */
+/* line 114, ../sass/_home.scss */
 .resources a {
   margin-right: 15px;
   margin-top: 45px;
@@ -753,39 +754,44 @@ header .navigations nav ul li a:hover, header .navigations nav ul li a:focus {
   font-size: 50px;
   margin-bottom: 20px;
 }
-/* line 65, ../sass/_pages.scss */
+/* line 63, ../sass/_pages.scss */
+.quienes-somos .main-activities .ma-list p {
+  line-height: 20px;
+}
+/* line 69, ../sass/_pages.scss */
 .quienes-somos .siga-info {
   background: url("../../img/siga-info.jpg") no-repeat scroll right bottom #647686;
   background-size: cover;
   padding: 70px 0;
   height: 550px;
 }
-/* line 71, ../sass/_pages.scss */
+/* line 75, ../sass/_pages.scss */
 .quienes-somos .siga-info h2 {
   color: #eae1c5;
 }
-/* line 75, ../sass/_pages.scss */
+/* line 79, ../sass/_pages.scss */
 .quienes-somos .siga-info h4 {
   color: #eae1c5;
   margin-bottom: 20px;
 }
-/* line 81, ../sass/_pages.scss */
+/* line 85, ../sass/_pages.scss */
 .quienes-somos .intro-equipo {
   text-align: center;
   padding: 70px 0;
 }
-/* line 86, ../sass/_pages.scss */
+/* line 90, ../sass/_pages.scss */
 .quienes-somos .profiles {
   text-align: center;
 }
-/* line 89, ../sass/_pages.scss */
+/* line 93, ../sass/_pages.scss */
 .quienes-somos .profiles .col-profile {
   display: inline-block;
   width: 270px;
   padding: 0 25px;
   vertical-align: top;
+  margin-bottom: 50px;
 }
-/* line 96, ../sass/_pages.scss */
+/* line 101, ../sass/_pages.scss */
 .quienes-somos .profiles .col-profile .profile-content h3 {
   font-family: 'Roboto Condensed', sans-serif;
   text-transform: uppercase;
@@ -794,14 +800,57 @@ header .navigations nav ul li a:hover, header .navigations nav ul li a:focus {
   font-weight: 700;
   margin: 20px 0 10px;
 }
-/* line 105, ../sass/_pages.scss */
+/* line 110, ../sass/_pages.scss */
 .quienes-somos .profiles .col-profile .profile-content h5.area-position {
   font-size: 16px;
   color: #555555;
+  font-weight: 600;
 }
-/* line 110, ../sass/_pages.scss */
-.quienes-somos .profiles .col-profile .profile-content .member-detail {
-  text-align: left;
+/* line 116, ../sass/_pages.scss */
+.quienes-somos .profiles .col-profile .profile-content .mas-info {
+  color: #68bd1d;
+  display: inline-block;
+  margin-top: 8px;
+}
+/* line 125, ../sass/_pages.scss */
+.quienes-somos .profiles .modal .modal-content {
+  padding: 20px 30px;
+  border-radius: 0;
+}
+/* line 129, ../sass/_pages.scss */
+.quienes-somos .profiles .modal .modal-content img {
+  margin-top: 25px;
+}
+/* line 133, ../sass/_pages.scss */
+.quienes-somos .profiles .modal .modal-content h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+  color: #d17c0d;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 20px 0 10px;
+}
+/* line 142, ../sass/_pages.scss */
+.quienes-somos .profiles .modal .modal-content h5.area-position {
+  font-size: 16px;
+  color: #555555;
+  font-weight: 600;
+}
+/* line 148, ../sass/_pages.scss */
+.quienes-somos .profiles .modal .modal-content p {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 20px 0 30px;
+}
+/* line 154, ../sass/_pages.scss */
+.quienes-somos .profiles .modal .modal-content button.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+/* line 164, ../sass/_pages.scss */
+.quienes-somos .resources h2 {
+  color: #eae1c5;
 }
 
 /* line 1, ../sass/_footer.scss */

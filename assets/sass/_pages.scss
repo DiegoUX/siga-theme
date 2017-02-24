@@ -59,6 +59,10 @@
 			    font-size: 50px;
 			    margin-bottom: 20px;
 			}
+
+			p {
+				line-height: 20px;
+			}
 		}
 	}
 
@@ -91,6 +95,7 @@
 			width: 270px;
 			padding: 0 25px;
 			vertical-align: top;
+			margin-bottom: 50px;
 
 			.profile-content {
 				h3 {
@@ -105,12 +110,59 @@
 				h5.area-position {
 					font-size: 16px;
 					color: $gray;
+					font-weight: 600;
 				}
 
-				.member-detail {
-					text-align: left;
+				.mas-info {
+					color: $green;
+					display: inline-block;
+					margin-top:8px;
 				}
 			}
+		}
+
+		.modal {
+			.modal-content {
+				padding: 20px 30px;
+				border-radius: 0;
+
+				img {
+					margin-top: 25px;
+				}
+
+				h3 {
+					font-family: 'Roboto Condensed', sans-serif;
+					text-transform: uppercase;
+					color: $orange;
+					font-size: 18px;
+					font-weight: 700;
+					margin: 20px 0 10px;
+				}
+
+				h5.area-position {
+					font-size: 16px;
+					color: $gray;
+					font-weight: 600;
+				}
+
+				p {
+					font-size: 14px;
+				    line-height: 20px;
+				    margin: 20px 0 30px;
+				}
+
+				button.close {
+					position: absolute;
+					top: 10px;
+					right: 15px;
+				}
+			}
+		}
+	}
+
+	.resources {
+		h2 {
+			color: $beige;
 		}
 	}
 }

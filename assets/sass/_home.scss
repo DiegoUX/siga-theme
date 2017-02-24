@@ -103,7 +103,8 @@
 }
 
 .resources {
-	background-color: #a36b05;
+	background: url('../../img/bg-resources.jpg') no-repeat scroll 0 0 #a36b05;
+	background-size: cover;
 	color: $beige;
 
 	h2 {

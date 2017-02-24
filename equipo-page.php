@@ -1,4 +1,5 @@
 <?php /* Template Name: Quienes Somos */ get_header(); ?>
+<?php remove_filter( 'the_content', 'wpautop' ); ?>
 
 	<main role="main">
 		<!-- section -->
@@ -31,7 +32,7 @@
 				<?php the_content(); ?>
 
 				<!-- Quitar luego -->
-				<section class="main-activities">
+				<!-- <section class="main-activities">
 					<div class="container">
 						<div class="row">
 							<div class="col-xl-8 col-lg-10">
@@ -42,19 +43,19 @@
 						<div class="row ma-list">
 							<div class="col-md-3">
 								<i class="icon icon-arrows-anticlockwise"></i>
-								<p>Generamos y analizamos datos para el subtrópico de Argentina</p>
+								<p class="no-p">Generamos y analizamos datos para el subtrópico de Argentina</p>
 							</div>
 							<div class="col-md-3">
 								<i class="icon icon-arrows-anticlockwise"></i>
-								<p>Difundimos cartográfica e información espacial</p>
+								<p class="no-p">Difundimos cartográfica e información espacial</p>
 							</div>
 							<div class="col-md-3">
 								<i class="icon icon-arrows-anticlockwise"></i>
-								<p>Brindamos capacitación técnica en distintos niveles educativos</p>
+								<p class="no-p">Brindamos capacitación técnica en distintos niveles educativos</p>
 							</div>
 							<div class="col-md-3">
 								<i class="icon icon-arrows-anticlockwise"></i>
-								<p>Desarrollamos proyectos con incidencia en políticas ambientales y productivas</p>
+								<p class="no-p">Desarrollamos proyectos con incidencia en políticas ambientales y productivas</p>
 							</div>
 						</div>
 					</div>
@@ -69,7 +70,7 @@
 							</div>
 						</div>
 					</div>
-				</section>
+				</section> -->
 				<!-- end Quitar luego -->
 
 			</article>
@@ -92,10 +93,8 @@
 
 		<!-- Sección Miembros del Equipo -->
 		<?php
-
 		the_post();
-
-		// Get 'team' posts
+		// Get 'equipo' posts
 		$team_posts = get_posts( array(
 			'post_type' => 'equipo',
 			'posts_per_page' => 10, // Unlimited posts
@@ -135,14 +134,31 @@
 					<div class="profile-content">
 						<h3><?php the_title(); ?></h3>
 						<h5 class="area-position"><?php the_field('area'); ?></h5>	
+						<!-- Modal trigger -->
+						<?php echo '<a class="mas-info" data-toggle="modal" href="#modal-' .$count. '">' ?>Más info</a>
 
-						<?php echo '<a data-toggle="collapse" data-parent="#accordion" href="#collapse-' .$count. '" aria-expanded="false" aria-controls="#collapse-' .$count. '">' ?>Ver Más</a>
-						<?php echo '<div id="collapse-' .$count. '" class="collapse member-detail">' ?>
-							<?php the_content(); ?>
-						</div>
 					</div>
-					
-				</article><!-- /.col-profile -->
+				</article>
+
+				<!-- Modal Content -->
+				<?php echo '<div id="modal-' .$count. '"	class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">'?>
+				    <div class="modal-content">
+				    	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+						<div class="profile-header">
+							<?php if ( $thumb_src ): ?>
+							<img src="<?php echo $thumb_src; ?>" alt="<?php the_title(); ?>, <?php the_field('area'); ?>" class="img-circle">
+							<?php endif; ?>
+						</div>
+						<h3><?php the_title(); ?></h3>
+						<h5 class="area-position"><?php the_field('area'); ?></h5>	
+				    	<?php the_content(); ?>
+				    </div>
+				  </div>
+				</div>
+
 				<?php $count++; ?>
 				<?php endforeach; ?>
 			</div>	
@@ -150,11 +166,21 @@
 		</div><!-- /.container -->
 		<?php endif; ?>
 
-
-
-
-
 		</section>
 		<!-- /section -->
+
+		<section class="resources section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9">
+						<h2>Descargá recursos gratuitos</h2>
+						<h4>Accedé de forma gratuita a mapas y archivos GIS del subtrópico de Argentina. Optimizá tu proyecto con información precisa y actualizada de la región.</h4>
+					</div>
+					<div class="col-md-3 tac">
+						<a href="/recursos" class="btn btn-invert">Recursos</a>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
 <?php get_footer(); ?>
