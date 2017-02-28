@@ -114,8 +114,11 @@ footer {
 		// margin-top: 25px;
 		margin-top: 120px;	
 
-		img {
+		i.icon {
 			margin-bottom: 15px;
+			color: $beige;
+			font-size: 65px;
+			display: inline-block;
 		}
     	
     	p {

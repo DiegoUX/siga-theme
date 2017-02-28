@@ -269,12 +269,12 @@ header .navigations nav ul li a:hover, header .navigations nav ul li a:focus {
 
 /* line 62, ../sass/_billboard-slider.scss */
 .cb-slideshow li:nth-child(1) span {
-  background-image: url(../../img/hero/1.jpg);
+  background-image: url(../../img/hero/1-billboard-escaba.jpg);
 }
 
 /* line 65, ../sass/_billboard-slider.scss */
 .cb-slideshow li:nth-child(2) span {
-  background-image: url(../../img/hero/2.jpg);
+  background-image: url(../../img/hero/2-billboard-chaco-serrano.jpg);
   -webkit-animation-delay: 6s;
   -moz-animation-delay: 6s;
   -o-animation-delay: 6s;
@@ -284,7 +284,7 @@ header .navigations nav ul li a:hover, header .navigations nav ul li a:focus {
 
 /* line 73, ../sass/_billboard-slider.scss */
 .cb-slideshow li:nth-child(3) span {
-  background-image: url(../../img/hero/3.jpg);
+  background-image: url(../../img/hero/3-billboard-baniado-laestrella.jpg);
   -webkit-animation-delay: 12s;
   -moz-animation-delay: 12s;
   -o-animation-delay: 12s;
@@ -294,7 +294,7 @@ header .navigations nav ul li a:hover, header .navigations nav ul li a:focus {
 
 /* line 81, ../sass/_billboard-slider.scss */
 .cb-slideshow li:nth-child(4) span {
-  background-image: url(../../img/hero/4.jpg);
+  background-image: url(../../img/hero/4-billboard-palmares.jpg);
   -webkit-animation-delay: 18s;
   -moz-animation-delay: 18s;
   -o-animation-delay: 18s;
@@ -304,7 +304,7 @@ header .navigations nav ul li a:hover, header .navigations nav ul li a:focus {
 
 /* line 89, ../sass/_billboard-slider.scss */
 .cb-slideshow li:nth-child(5) span {
-  background-image: url(../../img/hero/5.jpg);
+  background-image: url(../../img/hero/5-billboard-montaniasyunguenias.jpg);
   -webkit-animation-delay: 24s;
   -moz-animation-delay: 24s;
   -o-animation-delay: 24s;
@@ -314,7 +314,7 @@ header .navigations nav ul li a:hover, header .navigations nav ul li a:focus {
 
 /* line 97, ../sass/_billboard-slider.scss */
 .cb-slideshow li:nth-child(6) span {
-  background-image: url(../../img/hero/6.jpg);
+  background-image: url(../../img/hero/6-billboard-citrus.jpg);
   -webkit-animation-delay: 30s;
   -moz-animation-delay: 30s;
   -o-animation-delay: 30s;
@@ -628,6 +628,13 @@ header .navigations nav ul li a:hover, header .navigations nav ul li a:focus {
   margin-bottom: 10px;
 }
 /* line 58, ../sass/_home.scss */
+.services i.icon {
+  display: inline-block;
+  color: #1c5528;
+  font-size: 65px;
+  margin-bottom: 10px;
+}
+/* line 65, ../sass/_home.scss */
 .services h3 {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 18px;
@@ -637,56 +644,56 @@ header .navigations nav ul li a:hover, header .navigations nav ul li a:focus {
   line-height: normal;
   margin-bottom: 20px;
 }
-/* line 68, ../sass/_home.scss */
+/* line 75, ../sass/_home.scss */
 .services p {
   line-height: normal;
   margin-bottom: 25px;
   padding: 0 35px;
 }
 
-/* line 75, ../sass/_home.scss */
+/* line 82, ../sass/_home.scss */
 .help-you {
   background-color: #9b8e65;
   color: #eae1c5;
 }
-/* line 79, ../sass/_home.scss */
+/* line 86, ../sass/_home.scss */
 .help-you h2 {
   text-transform: uppercase;
 }
-/* line 83, ../sass/_home.scss */
+/* line 90, ../sass/_home.scss */
 .help-you a {
   margin-top: 45px;
   margin-right: 40px;
 }
 
-/* line 89, ../sass/_home.scss */
+/* line 96, ../sass/_home.scss */
 .our-work {
   background-color: #0a2711;
   color: #eae1c5;
   text-align: center;
 }
-/* line 94, ../sass/_home.scss */
+/* line 101, ../sass/_home.scss */
 .our-work h2 {
   text-transform: uppercase;
 }
-/* line 98, ../sass/_home.scss */
+/* line 105, ../sass/_home.scss */
 .our-work img {
   display: block;
   margin: 50px auto;
   width: 100%;
 }
 
-/* line 105, ../sass/_home.scss */
+/* line 112, ../sass/_home.scss */
 .resources {
   background: url("../../img/bg-resources.jpg") no-repeat scroll 0 0 #a36b05;
   background-size: cover;
   color: #eae1c5;
 }
-/* line 110, ../sass/_home.scss */
+/* line 117, ../sass/_home.scss */
 .resources h2 {
   text-transform: uppercase;
 }
-/* line 114, ../sass/_home.scss */
+/* line 121, ../sass/_home.scss */
 .resources a {
   margin-right: 15px;
   margin-top: 45px;
@@ -964,26 +971,29 @@ footer .servicio-contacto {
   margin-top: 120px;
 }
 /* line 117, ../sass/_footer.scss */
-footer .servicio-contacto img {
+footer .servicio-contacto i.icon {
   margin-bottom: 15px;
+  color: #eae1c5;
+  font-size: 65px;
+  display: inline-block;
 }
-/* line 121, ../sass/_footer.scss */
+/* line 124, ../sass/_footer.scss */
 footer .servicio-contacto p {
   color: #eae1c5;
   font-size: 14px;
   line-height: 18px;
   margin-bottom: 5px;
 }
-/* line 128, ../sass/_footer.scss */
+/* line 131, ../sass/_footer.scss */
 footer .servicio-contacto a {
   color: #68bd1d;
   font-size: 14px;
 }
-/* line 132, ../sass/_footer.scss */
+/* line 135, ../sass/_footer.scss */
 footer .servicio-contacto a:hover {
   text-decoration: underline;
 }
-/* line 138, ../sass/_footer.scss */
+/* line 141, ../sass/_footer.scss */
 footer .bottom-foo {
   padding: 10px 0;
   margin-top: 30px;
@@ -991,11 +1001,11 @@ footer .bottom-foo {
   color: #eae1c5;
   font-size: 12px;
 }
-/* line 145, ../sass/_footer.scss */
+/* line 148, ../sass/_footer.scss */
 footer .bottom-foo .credit {
   text-align: right;
 }
-/* line 148, ../sass/_footer.scss */
+/* line 151, ../sass/_footer.scss */
 footer .bottom-foo .credit a {
   color: #FFCC00;
   -webkit-transition: all 0.4s ease;
@@ -1004,7 +1014,7 @@ footer .bottom-foo .credit a {
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
-/* line 156, ../sass/_footer.scss */
+/* line 159, ../sass/_footer.scss */
 footer .bottom-foo .credit a:hover {
   opacity: 0.7;
   text-decoration: none;

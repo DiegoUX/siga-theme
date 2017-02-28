@@ -47,7 +47,7 @@
 						</a>
 						<div class="hidden-md-up mobile-btn">
 							<a href="#">
-								<i class="icon icon-arrows-hamburger-2"></i>
+								<i class="icon icon-arrows_hamburger-2"></i>
 							</a>
 						</div>
 					</div>

@@ -46,25 +46,29 @@
 						</div>
 						<div class="row">
 							<div class="col-lg-3 col-sm-6 mbl-mgn two-top-services">
-								<img src="../wp-content/themes/siga-theme/img/visores.svg" alt="Icon Visores de Mapas">
+								<i class="icon icon-visores"></i>
+								<!-- <img src="../wp-content/themes/siga-theme/img/visores.svg" alt="Icon Visores de Mapas"> -->
 								<h3>Visores<br> de Mapas</h3>
 								<p>Visualizá la información en capas, descargá documentos y accedé a mapas interactivos.</p>
 								<a href="#" class="btn btn-main">Ver Más</a>
 							</div>
 							<div class="col-lg-3 col-sm-6 mbl-mgn two-top-services">
-								<img src="../wp-content/themes/siga-theme/img/appmoviles.svg" alt="Icon Apps Móviles">
+								<!-- <img src="../wp-content/themes/siga-theme/img/appmoviles.svg" alt="Icon Apps Móviles"> -->
+								<i class="icon icon-apps"></i>
 								<h3>Aplicaciones<br>Móviles</h3>
 								<p>Visualizá la información en capas, descargá documentos y accedé a mapas interactivos.</p>
 								<a href="#" class="btn btn-main">Ver Más</a>
 							</div>
 							<div class="col-lg-3 col-sm-6 mbl-mgn">
-								<img src="../wp-content/themes/siga-theme/img/cartografia.svg" alt="Icon Produtos Cartográficos">
+								<!-- <img src="../wp-content/themes/siga-theme/img/cartografia.svg" alt="Icon Produtos Cartográficos"> -->
+								<i class="icon icon-mapa"></i>
 								<h3>Productos<br> Cartográficos</h3>
 								<p>Visualizá la información en capas, descargá documentos y accedé a mapas interactivos.</p>
 								<a href="#" class="btn btn-main">Ver Más</a>
 							</div>
 							<div class="col-lg-3 col-sm-6 mbl-mgn">
-								<img src="../wp-content/themes/siga-theme/img/capacitacion.svg" alt="Icon Capacitación y Formación">
+								<!-- <img src="../wp-content/themes/siga-theme/img/capacitacion.svg" alt="Icon Capacitación y Formación"> -->
+								<i class="icon icon-formacion"></i>
 								<h3>Formación<br> y Capacitación</h3>
 								<p>Visualizá la información en capas, descargá documentos y accedé a mapas interactivos.</p>
 								<a href="#" class="btn btn-main">Ver Más</a>

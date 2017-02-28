@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'siga-font';
+  src:  url('siga-font.eot?a1yzx5');
+  src:  url('siga-font.eot?a1yzx5#iefix') format('embedded-opentype'),
+    url('siga-font.ttf?a1yzx5') format('truetype'),
+    url('siga-font.woff?a1yzx5') format('woff'),
+    url('siga-font.svg?a1yzx5#siga-font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'siga-font' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-apps:before {
+  content: "\e900";
+}
+.icon-avanzar:before {
+  content: "\e901";
+}
+.icon-capacitacion:before {
+  content: "\e902";
+}
+.icon-cerrar:before {
+  content: "\e903";
+}
+.icon-check:before {
+  content: "\e904";
+}
+.icon-datos:before {
+  content: "\e905";
+}
+.icon-descargar:before {
+  content: "\e906";
+}
+.icon-destacados:before {
+  content: "\e907";
+}
+.icon-difusion:before {
+  content: "\e908";
+}
+.icon-error:before {
+  content: "\e909";
+}
+.icon-foco:before {
+  content: "\e90a";
+}
+.icon-formacion:before {
+  content: "\e90b";
+}
+.icon-gis:before {
+  content: "\e90c";
+}
+.icon-jpg:before {
+  content: "\e90d";
+}
+.icon-mapa:before {
+  content: "\e90e";
+}
+.icon-mensaje_feliz:before {
+  content: "\e90f";
+}
+.icon-retroceder:before {
+  content: "\e910";
+}
+.icon-todos:before {
+  content: "\e911";
+}
+.icon-visores:before {
+  content: "\e912";
+}
+.icon-wms:before {
+  content: "\e913";
+}
+.icon-arrows_hamburger-2:before {
+  content: "\e914";
+}
+
