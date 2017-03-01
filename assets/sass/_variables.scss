@@ -51,6 +51,10 @@ $brown: #9b8e65;
 	}
 }
 
+a:focus {
+    outline: 0 none !important;
+}
+
 // Titulos...
 
 h2 {

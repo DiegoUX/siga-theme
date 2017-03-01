@@ -109,14 +109,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-color: #EF8B10;
 }
 
-/* line 56, ../sass/_variables.scss */
+/* line 54, ../sass/_variables.scss */
+a:focus {
+  outline: 0 none !important;
+}
+
+/* line 60, ../sass/_variables.scss */
 h2 {
   font-family: 'Oswald', sans-serif;
   font-size: 32px;
   margin-bottom: 30px;
 }
 
-/* line 62, ../sass/_variables.scss */
+/* line 66, ../sass/_variables.scss */
 h4 {
   font-size: 18px;
   line-height: 24px;
@@ -611,7 +616,7 @@ header .navigations nav ul li a:hover, header .navigations nav ul li a:focus {
 
 /* line 41, ../sass/_home.scss */
 .services {
-  background: #F4EDDA;
+  background: url("../../img/pattern.jpg") repeat scroll 0 0 #f4eedb;
   text-align: center;
 }
 /* line 45, ../sass/_home.scss */
@@ -684,16 +689,52 @@ header .navigations nav ul li a:hover, header .navigations nav ul li a:focus {
 }
 
 /* line 112, ../sass/_home.scss */
+.clients {
+  text-align: center;
+}
+/* line 115, ../sass/_home.scss */
+.clients h2 {
+  color: #1c5528;
+  text-transform: uppercase;
+}
+/* line 122, ../sass/_home.scss */
+.clients .logo-clients ul li {
+  display: inline-block;
+  margin: 0 20px;
+  padding: 30px 0;
+}
+/* line 127, ../sass/_home.scss */
+.clients .logo-clients ul li a {
+  opacity: 0.5;
+  display: inline-block;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+/* line 136, ../sass/_home.scss */
+.clients .logo-clients ul li a img {
+  width: 100%;
+  height: 50px;
+  vertical-align: middle;
+}
+/* line 142, ../sass/_home.scss */
+.clients .logo-clients ul li a:hover {
+  opacity: 1;
+}
+
+/* line 151, ../sass/_home.scss */
 .resources {
   background: url("../../img/bg-resources.jpg") no-repeat scroll 0 0 #a36b05;
   background-size: cover;
   color: #eae1c5;
 }
-/* line 117, ../sass/_home.scss */
+/* line 156, ../sass/_home.scss */
 .resources h2 {
   text-transform: uppercase;
 }
-/* line 121, ../sass/_home.scss */
+/* line 160, ../sass/_home.scss */
 .resources a {
   margin-right: 15px;
   margin-top: 45px;
@@ -742,7 +783,7 @@ header .navigations nav ul li a:hover, header .navigations nav ul li a:focus {
 }
 /* line 44, ../sass/_pages.scss */
 .quienes-somos .main-activities {
-  background: url("../../img/pattern.png") repeat scroll 0 0 #f4eedb;
+  background: url("../../img/pattern.jpg") repeat scroll 0 0 #f4eedb;
   padding: 70px 0;
 }
 /* line 48, ../sass/_pages.scss */
