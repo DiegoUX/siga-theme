@@ -5,7 +5,7 @@
 		<section>
 			<!-- Imagen destacada/Billboard páginas -->
 				<?php
-				$thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large');
+				$thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), '');
 				?>
 				<div class="page-billboard" style="background-image:url(<?php echo $thumbnail[0]; ?>);background-repeat:no-repeat;">
 

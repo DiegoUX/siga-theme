@@ -33,7 +33,7 @@
 	}
 }
 
-
+// Quienes Somos...
 .quienes-somos {
 	h2 {
 		color: $darkGreen;
@@ -166,3 +166,144 @@
 		}
 	}
 }
+
+// Servicios
+.servicios {
+
+	.btn {
+		display: inline-block;
+	}
+
+	.visores-mapas {
+		background: url('../../img/pattern.jpg') repeat scroll 0 0 #f4eedb;
+
+		h2 {
+			color: $darkGreen;
+			line-height: 42px;
+			text-transform: uppercase;
+		}
+		
+		ul {
+			margin: 25px 0 40px;
+			display: block;
+
+			li {
+
+				margin-bottom: 15px;
+				font-size: 18px;
+				line-height: 24px;
+				
+				span.icon {
+					color: $orange;
+					padding-right: 8px;
+				}
+			}
+		}
+
+		img {
+			width: 100%;
+			margin-top: 75px;
+		}
+	}
+
+	.apps-movil {
+		background: url('../../img/movil-bosque.jpg') no-repeat scroll right center #487125;
+		background-size: cover;
+		padding: 70px 0;
+		height: 580px;
+		color: $beige;
+
+		h2 {
+			text-transform: uppercase;
+		}
+
+		ul {
+			margin: 25px 0 40px;
+			display: block;
+
+			li {
+
+				margin-bottom: 15px;
+				font-size: 18px;
+				line-height: 24px;
+				
+				span.icon {
+					color: $beige;
+					padding-right: 8px;
+				}
+			}
+		}
+	}
+
+	.productos-cartograficos {
+		background: url('../../img/pattern.jpg') repeat scroll 0 0 #f4eedb;
+
+		h2 {
+			color: $darkGreen;
+			line-height: 42px;
+			text-transform: uppercase;
+		}
+
+		h4 {
+			margin-bottom: 20px;
+		}
+
+		img {
+			width: 100%;
+			margin-top: 75px;
+		}
+
+		.btn {
+			margin-top: 25px;
+		}
+	}
+
+	.formacion {
+		background: url('../../img/servicios-capacitacion.jpg') no-repeat scroll right center #487125;
+		background-size: cover;
+		padding: 70px 0;
+		height: 580px;
+
+		h2 {
+			text-transform: uppercase;
+			color: $darkGreen;
+		}
+
+		h4 {
+			margin-bottom: 20px;
+			display: inline-block;
+		}
+
+		ul {
+			margin: 10px 0 40px;
+			display: block;
+
+			li {
+
+				margin-bottom: 15px;
+				font-size: 18px;
+				line-height: 24px;
+				
+				span.icon {
+					color: $orange;
+					padding-right: 8px;
+				}
+			}
+		}
+	}
+
+	.meet-us {
+		background-color: $light-green;
+		color: $beige;
+
+		h2 {
+			text-transform: uppercase;
+		}
+
+		a {
+			margin-top: 45px;
+			margin-right: 40px;
+		}
+	}
+}
+
