@@ -715,7 +715,7 @@ header .navigations nav ul li a:hover, header .navigations nav ul li a:focus {
 }
 /* line 136, ../sass/_home.scss */
 .clients .logo-clients ul li a img {
-  width: 100%;
+  width: auto;
   height: 50px;
   vertical-align: middle;
 }
