@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -1033,6 +1034,124 @@ header .navigations nav ul li a:hover, header .navigations nav ul li a:focus {
 .servicios .meet-us a {
   margin-top: 45px;
   margin-right: 40px;
+}
+
+/* line 313, ../sass/_pages.scss */
+.nos-acompanan .sec-lighten {
+  text-align: center;
+  background: #f9f3df;
+}
+/* line 318, ../sass/_pages.scss */
+.nos-acompanan .sec-dark {
+  text-align: center;
+  background: #eae1c5;
+}
+/* line 323, ../sass/_pages.scss */
+.nos-acompanan .logos-color {
+  margin: 0 auto;
+}
+/* line 326, ../sass/_pages.scss */
+.nos-acompanan .logos-color li {
+  display: inline-block;
+  margin: 0 35px;
+  padding: 30px 0;
+}
+/* line 331, ../sass/_pages.scss */
+.nos-acompanan .logos-color li a {
+  display: inline-block;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+/* line 339, ../sass/_pages.scss */
+.nos-acompanan .logos-color li a img {
+  height: 50px;
+  vertical-align: middle;
+  width: auto;
+}
+/* line 345, ../sass/_pages.scss */
+.nos-acompanan .logos-color li a:hover {
+  opacity: 0.5;
+}
+/* line 352, ../sass/_pages.scss */
+.nos-acompanan .see-ourWork {
+  background-color: #1c5528;
+  color: #eae1c5;
+}
+/* line 356, ../sass/_pages.scss */
+.nos-acompanan .see-ourWork h2 {
+  text-transform: uppercase;
+}
+/* line 360, ../sass/_pages.scss */
+.nos-acompanan .see-ourWork a {
+  margin-top: 45px;
+  margin-right: 40px;
+}
+/* line 366, ../sass/_pages.scss */
+.nos-acompanan .testimonials {
+  text-align: center;
+  background: url("../../img/pattern-green.jpg") repeat scroll 0 0 #f4eedb;
+  color: #1c5528;
+}
+/* line 371, ../sass/_pages.scss */
+.nos-acompanan .testimonials h2 {
+  text-transform: uppercase;
+}
+/* line 375, ../sass/_pages.scss */
+.nos-acompanan .testimonials .tes-detail {
+  margin-top: 25px;
+}
+/* line 378, ../sass/_pages.scss */
+.nos-acompanan .testimonials .tes-detail .tes-name {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+}
+/* line 384, ../sass/_pages.scss */
+.nos-acompanan .testimonials .tes-detail h4 {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+/* line 389, ../sass/_pages.scss */
+.nos-acompanan .testimonials .tes-detail > img {
+  border: 1px solid #1c5528;
+  border-radius: 100%;
+  height: 160px;
+  margin-bottom: 15px;
+  width: 160px;
+}
+/* line 397, ../sass/_pages.scss */
+.nos-acompanan .testimonials .tes-detail blockquote {
+  font-size: 18px;
+  color: #555555;
+  line-height: 24px;
+  margin: 1em 10px;
+  padding: 0.5em 10px;
+  quotes: "“" "”";
+  border: 0;
+  text-align: center;
+  font-style: italic;
+}
+/* line 408, ../sass/_pages.scss */
+.nos-acompanan .testimonials .tes-detail blockquote:before {
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  vertical-align: -0.3em;
+  color: #1c5528;
+  padding-right: 10px;
+}
+/* line 417, ../sass/_pages.scss */
+.nos-acompanan .testimonials .tes-detail blockquote p {
+  display: inline;
+}
+/* line 423, ../sass/_pages.scss */
+.nos-acompanan .testimonials .tes-icon .icon {
+  display: inline-block;
+  font-size: 65px;
+  margin-top: 10px;
 }
 
 /* line 1, ../sass/_footer.scss */

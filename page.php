@@ -32,7 +32,7 @@
 				<?php the_content(); ?>
 
 				<!-- Quitar luego -->
-				
+
 				<!-- end Quitar luego -->
 
 			</article>
