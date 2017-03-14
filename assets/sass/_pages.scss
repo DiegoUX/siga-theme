@@ -427,3 +427,127 @@
 		}
 	}
 }
+
+// Trabajos...
+.trabajos {
+	.wagwep-container {
+		#portfolio-filter {
+			border-bottom: none !important;
+			margin-top: 20px;
+
+			li {
+
+				a {
+					text-transform: uppercase;
+					font-family: 'Roboto Condensed', sans-serif;
+					font-weight: 600;
+
+					&:hover {
+						color: $orange;
+						background: transparent;
+					}
+				}
+
+				&.current {
+					a {
+						color: $orange;
+						background: transparent;
+						border-bottom: 2px solid $orange;
+						border-radius: 0;
+					}
+				}
+			}
+		}	
+	}
+	
+	.og-pointer {
+		border-color: transparent transparent #444;
+	}
+
+	.og-grid li a figure {
+    	background: rgba(10, 39, 17, 0.7) none repeat scroll 0 0;
+
+    	span {
+    		font-family: 'Oswald', sans-serif;
+    		color: $beige;
+    		font-size: 20px;
+    		border-bottom: 0;
+    		// text-align: left;
+    	}
+    }	
+
+	.og-expander {
+		background: #444;
+
+		.og-expander-inner {
+			padding: 50px;
+			
+			.og-close {
+				background: none;
+			}
+
+			.og-fullimg {
+				width: 60%;
+				padding: 0 20px;
+			}
+
+			.og-details {
+				width: 40%;
+
+				h3 {
+					font-family: 'Oswald', sans-serif;
+					color: $beige !important;
+					text-transform: uppercase;
+					margin-bottom: 20px !important;
+				}
+
+				p {
+					color: $beige;
+					line-height: 24px;
+					margin-bottom: 25px !important;
+				}
+
+				a {
+					background: $orange;
+				    border: medium none;
+				    border-radius: 0;
+				    color: #ffffff !important;
+				    font-family: "Oswald",sans-serif;
+				    padding: 0.8rem 1.6rem;
+				    text-shadow: none !important;
+				    text-transform: uppercase;
+				    font-size: 1rem;
+				    font-weight: 400;
+				    display: inline-block;
+
+					&:hover {
+						color: #FFFFFF;
+						background: #EF8B10;
+						text-decoration: none;
+					}
+				}
+			}
+
+			.og-details::after, 
+			.og-details::before {
+				border: 0 transparent !important;
+				width: 0;
+			}
+		}
+	}
+
+	.more-services {
+		background-color: #9b8e65;
+		color: $beige;
+		margin-top: 25px;
+
+		h2 {
+			text-transform: uppercase;
+		}
+
+		a {
+			margin-top: 45px;
+			margin-right: 40px;
+		}
+	}
+}	

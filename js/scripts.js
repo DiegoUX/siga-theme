@@ -17,6 +17,8 @@
 		smoothScroll.init({
 		    offset: 98 // Integer. How far to offset the scrolling anchor location in pixels
 		});
+
+		$('.wagwep-container').addClass("container");
 		
 	});
 	
