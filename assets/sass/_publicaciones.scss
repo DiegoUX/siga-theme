@@ -1,0 +1,147 @@
+.publicaciones, 
+.single-pub {
+	background: #ededed;
+	padding: 30px 0;
+
+	.pub-title {
+		color: $darkGreen;
+		text-transform: uppercase;
+		font-family: 'Oswald', sans-serif;
+		margin-bottom: 50px;
+	}
+
+	.back-to {
+		a {
+		    color: #68bd1d;
+		    display: inline-block;
+		    font-family: 'Oswald', sans-serif;
+		    margin-bottom: 25px;
+		    padding: 10px 0;
+		}
+	}
+
+	article.post {
+		margin-top: 15px;
+		color: #333;
+
+		.date-wrap {
+		    background: #555 none repeat scroll 0 0;
+		    border-radius: 100%;
+		    color: #ffffff;
+		    height: 70px;
+		    padding: 11px 10px;
+		    text-align: center;
+		    text-transform: uppercase;
+		    width: 70px;
+
+		    span {
+		    	display: block;
+    			line-height: 20px;
+		    }
+
+		    .line {
+		    	border-bottom: 2px solid #fff;
+    			margin: 3px 0;
+		    }
+		}
+
+		hr {
+			border-color: #bbb;
+		}
+
+		.descarga-pdf {
+			margin-bottom: 50px;
+		}
+
+		.post-title,
+		.post-title a {
+			color: $lightBlue;
+			line-height: 36px;
+			text-transform: uppercase;
+			font-size: 28px;
+			margin-bottom: 25px;
+		}
+
+		.autores {
+			font-size: 14px;
+			margin-bottom: 25px;
+			span {
+				font-weight: 600;
+				text-transform: uppercase;
+			}
+		}
+		
+		.img-link {
+			-moz-transition: all 0.4s ease;
+			-ms-transition: all 0.4s ease;
+			-o-transition: all 0.4s ease;
+			transition: all 0.4s ease;
+
+			.wp-post-image {
+				border: 2px solid #bbb;
+				margin-bottom: 25px;
+				width: 100%;
+			}
+
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+		
+
+		p {
+			line-height: 25px;
+			margin-bottom: 15px;
+		}
+
+		.btn {
+			margin-top: 30px;
+		}
+	}
+
+	.sidebar {
+		.side-img {
+			text-align: center;
+			margin-top: 15px;
+
+			a {
+				-webkit-transition: all 0.4s ease;
+				-moz-transition: all 0.4s ease;
+				-ms-transition: all 0.4s ease;
+				-o-transition: all 0.4s ease;
+				transition: all 0.4s ease;
+
+				img {
+					width: 100%;
+				}
+
+				&:hover {
+					opacity: 0.8;
+				}
+			}	
+		}
+
+		.side-link {
+			text-align: center;
+
+			h2 {
+				font-size: 30px;
+				text-transform: uppercase;
+				color: $darkGreen;
+				margin-top: 30px;
+				line-height: 36px;
+			}
+
+			a {
+				color: $lightBlue;
+				font-weight: 600;
+			}
+		}
+	}
+}
+
+.single-pub {
+	.side-img {
+		margin-top: 75px !important;
+	}
+}
