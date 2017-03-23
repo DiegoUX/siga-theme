@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'siga-font';
-  src:  url('siga-font.eot?2t0w8z');
-  src:  url('siga-font.eot?2t0w8z#iefix') format('embedded-opentype'),
-    url('siga-font.ttf?2t0w8z') format('truetype'),
-    url('siga-font.woff?2t0w8z') format('woff'),
-    url('siga-font.svg?2t0w8z#siga-font') format('svg');
+  src:  url('siga-font.eot?a1yzx5');
+  src:  url('siga-font.eot?a1yzx5#iefix') format('embedded-opentype'),
+    url('siga-font.ttf?a1yzx5') format('truetype'),
+    url('siga-font.woff?a1yzx5') format('woff'),
+    url('siga-font.svg?a1yzx5#siga-font') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -22,10 +22,6 @@
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-magnifier:before {
-  content: "\e915";
 }
 
 .icon-apps:before {

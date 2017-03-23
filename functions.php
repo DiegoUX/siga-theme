@@ -105,6 +105,9 @@ function html5blank_header_scripts()
         wp_register_script('tether-js', get_template_directory_uri() . '/js/lib/tether.min.js', false, '1.4.0', true);
         wp_enqueue_script('tether-js'); // Enqueue it!
 
+        wp_register_script('isotope-js', get_template_directory_uri() . '/js/lib/isotope.js', false, '3.0.3', true);
+        wp_enqueue_script('isotope-js'); // Enqueue it!
+
         wp_register_script('bootstrap-js', get_template_directory_uri() . '/js/lib/bootstrap.min.js', false, '4.0.0.alpha6', true);
         wp_enqueue_script('bootstrap-js'); // Enqueue it!
 
@@ -401,8 +404,132 @@ add_action('wp_enqueue_scripts', 'html5blank_styles'); // Add Theme Stylesheet
 add_action('init', 'register_html5_menu'); // Add HTML5 Blank Menu
 // add_action('init', 'create_post_type_html5'); // Add our HTML5 Blank Custom Post Type
 add_action('init', 'create_post_type_equipo'); // Add our HTML5 Blank Custom Post Type
+
+// Recursos post-types
+add_action('init', 'create_post_type_poster');
+add_action('init', 'create_post_type_mapa');
+add_action('init', 'create_post_type_cobertura');
+
 add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
 add_action('init', 'html5wp_pagination'); // Add our HTML5 Pagination
+
+// add taxonomy actions
+
+//hook into the init action and call create_tematicas_nonhierarchical_taxonomy when it fires
+add_action( 'init', 'create_tematicas_nonhierarchical_taxonomy', 0 );
+
+function create_tematicas_nonhierarchical_taxonomy() {
+
+  // Labels part for the GUI
+
+  $labels = array(
+    'name' => _x( 'Tematicas', 'taxonomy general name' ),
+    'singular_name' => _x( 'Tematica', 'taxonomy singular name' ),
+    'search_items' =>  __( 'Search Tematicas' ),
+    'popular_items' => __( 'Popular Tematicas' ),
+    'all_items' => __( 'All Tematicas' ),
+    'parent_item' => null,
+    'parent_item_colon' => null,
+    'edit_item' => __( 'Edit Tematica' ), 
+    'update_item' => __( 'Update Tematica' ),
+    'add_new_item' => __( 'Add New Tematica' ),
+    'new_item_name' => __( 'New Tematica Name' ),
+    'separate_items_with_commas' => __( 'Separate tematicas with commas' ),
+    'add_or_remove_items' => __( 'Add or remove tematicas' ),
+    'choose_from_most_used' => __( 'Choose from the most used tematicas' ),
+    'menu_name' => __( 'Tematicas' ),
+  ); 
+
+  // Now register the non-hierarchical taxonomy like tag
+
+  register_taxonomy('tematicas',array('mapa','poster'), array(
+    'hierarchical' => false,
+    'labels' => $labels,
+    'show_ui' => true,
+    'show_admin_column' => true,
+    'update_count_callback' => '_update_post_term_count',
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'tematica' ),
+  ));
+}
+
+//hook into the init action and call create_ecorregiones_nonhierarchical_taxonomy when it fires
+
+add_action( 'init', 'create_ecorregiones_nonhierarchical_taxonomy', 0 );
+
+function create_ecorregiones_nonhierarchical_taxonomy() {
+
+  // Labels part for the GUI
+
+  $labels = array(
+    'name' => _x( 'Ecorregiones', 'taxonomy general name' ),
+    'singular_name' => _x( 'Ecorregion', 'taxonomy singular name' ),
+    'search_items' =>  __( 'Search Ecorregiones' ),
+    'popular_items' => __( 'Popular Ecorregiones' ),
+    'all_items' => __( 'All Ecorregiones' ),
+    'parent_item' => null,
+    'parent_item_colon' => null,
+    'edit_item' => __( 'Edit Ecorregion' ), 
+    'update_item' => __( 'Update Ecorregion' ),
+    'add_new_item' => __( 'Add New Ecorregion' ),
+    'new_item_name' => __( 'New Ecorregion Name' ),
+    'separate_items_with_commas' => __( 'Separate ecorregiones with commas' ),
+    'add_or_remove_items' => __( 'Add or remove ecorregiones' ),
+    'choose_from_most_used' => __( 'Choose from the most used ecorregiones' ),
+    'menu_name' => __( 'Ecorregiones' ),
+  ); 
+
+  // Now register the non-hierarchical taxonomy like tag
+
+  register_taxonomy('ecorregiones', array('mapa','poster'),array(
+    'hierarchical' => false,
+    'labels' => $labels,
+    'show_ui' => true,
+    'show_admin_column' => true,
+    'update_count_callback' => '_update_post_term_count',
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'ecorregion' ),
+  ));
+}
+
+//hook into the init action and call create_ubicaciones_nonhierarchical_taxonomy when it fires
+
+add_action( 'init', 'create_ubicaciones_nonhierarchical_taxonomy', 0 );
+
+function create_ubicaciones_nonhierarchical_taxonomy() {
+
+  // Labels part for the GUI
+
+  $labels = array(
+    'name' => _x( 'Ubicaciones', 'taxonomy general name' ),
+    'singular_name' => _x( 'Ubicacion', 'taxonomy singular name' ),
+    'search_items' =>  __( 'Search Ubicaciones' ),
+    'popular_items' => __( 'Popular Ubicaciones' ),
+    'all_items' => __( 'All Ubicaciones' ),
+    'parent_item' => null,
+    'parent_item_colon' => null,
+    'edit_item' => __( 'Edit Ubicacion' ), 
+    'update_item' => __( 'Update Ubicacion' ),
+    'add_new_item' => __( 'Add New Ubicacion' ),
+    'new_item_name' => __( 'New Ubicacion Name' ),
+    'separate_items_with_commas' => __( 'Separate ubicaciones with commas' ),
+    'add_or_remove_items' => __( 'Add or remove ubicaciones' ),
+    'choose_from_most_used' => __( 'Choose from the most used ubicaciones' ),
+    'menu_name' => __( 'Ubicaciones' ),
+  ); 
+
+  // Now register the non-hierarchical taxonomy like tag
+
+  register_taxonomy('ubicaciones', array('mapa','poster'),array(
+    'hierarchical' => false,
+    'labels' => $labels,
+    'show_ui' => true,
+    'show_admin_column' => true,
+    'update_count_callback' => '_update_post_term_count',
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'ubicacion' ),
+  ));
+}
 
 // Remove Actions
 remove_action('wp_head', 'feed_links_extra', 3); // Display the links to the extra feeds such as category feeds
@@ -508,6 +635,122 @@ function create_post_type_equipo()
             'search_items' => __('Search Equipo Custom Post', 'html5blank'),
             'not_found' => __('No Equipo Custom Posts found', 'html5blank'),
             'not_found_in_trash' => __('No Equipo Custom Posts found in Trash', 'html5blank')
+        ),
+        'public' => true,
+        'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
+        'has_archive' => true,
+        'supports' => array(
+            'title',
+            'editor',
+            'excerpt',
+            'thumbnail'
+        ), // Go to Dashboard Custom HTML5 Blank post for supports
+        'can_export' => true, // Allows export in Tools > Export
+        'taxonomies' => array(
+            'post_tag',
+            'category'
+        ) // Add Category and Post Tags support
+    ));
+}
+
+// recursos custom post-types
+
+// Custom post type Poster
+function create_post_type_poster()
+{
+    register_taxonomy_for_object_type('category', 'poster'); // Register Taxonomies for Category
+    register_taxonomy_for_object_type('post_tag', 'poster');
+    register_post_type('poster', // Register Custom Post Type
+        array(
+        'labels' => array(
+            'name' => __('Poster', 'html5blank'), // Rename these to suit
+            'singular_name' => __('Poster Custom Post', 'html5blank'),
+            'add_new' => __('Agregar Nuevo', 'html5blank'),
+            'add_new_item' => __('Agregar Nuevo Miembro al Poster', 'html5blank'),
+            'edit' => __('Editar', 'html5blank'),
+            'edit_item' => __('Edit Poster Custom Post', 'html5blank'),
+            'new_item' => __('New Poster Custom Post', 'html5blank'),
+            'view' => __('View Poster Custom Post', 'html5blank'),
+            'view_item' => __('View Poster Custom Post', 'html5blank'),
+            'search_items' => __('Search Poster Custom Post', 'html5blank'),
+            'not_found' => __('No Poster Custom Posts found', 'html5blank'),
+            'not_found_in_trash' => __('No Poster Custom Posts found in Trash', 'html5blank')
+        ),
+        'public' => true,
+        'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
+        'has_archive' => true,
+        'supports' => array(
+            'title',
+            'editor',
+            'excerpt',
+            'thumbnail'
+        ), // Go to Dashboard Custom HTML5 Blank post for supports
+        'can_export' => true, // Allows export in Tools > Export
+        'taxonomies' => array(
+            'post_tag',
+            'category'
+        ) // Add Category and Post Tags support
+    ));
+}
+
+// Custom post type Mapa
+function create_post_type_mapa()
+{
+    register_taxonomy_for_object_type('category', 'mapa'); // Register Taxonomies for Category
+    register_taxonomy_for_object_type('post_tag', 'mapa');
+    register_post_type('mapa', // Register Custom Post Type
+        array(
+        'labels' => array(
+            'name' => __('Mapa', 'html5blank'), // Rename these to suit
+            'singular_name' => __('Mapa Custom Post', 'html5blank'),
+            'add_new' => __('Agregar Nuevo', 'html5blank'),
+            'add_new_item' => __('Agregar Nuevo Miembro al Mapa', 'html5blank'),
+            'edit' => __('Editar', 'html5blank'),
+            'edit_item' => __('Edit Mapa Custom Post', 'html5blank'),
+            'new_item' => __('New Mapa Custom Post', 'html5blank'),
+            'view' => __('View Mapa Custom Post', 'html5blank'),
+            'view_item' => __('View Mapa Custom Post', 'html5blank'),
+            'search_items' => __('Search Mapa Custom Post', 'html5blank'),
+            'not_found' => __('No Mapa Custom Posts found', 'html5blank'),
+            'not_found_in_trash' => __('No Mapa Custom Posts found in Trash', 'html5blank')
+        ),
+        'public' => true,
+        'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
+        'has_archive' => true,
+        'supports' => array(
+            'title',
+            'editor',
+            'excerpt',
+            'thumbnail'
+        ), // Go to Dashboard Custom HTML5 Blank post for supports
+        'can_export' => true, // Allows export in Tools > Export
+        'taxonomies' => array(
+            'post_tag',
+            'category'
+        ) // Add Category and Post Tags support
+    ));
+}
+
+// Custom post type Cobertura
+function create_post_type_cobertura()
+{
+    register_taxonomy_for_object_type('category', 'cobertura'); // Register Taxonomies for Category
+    register_taxonomy_for_object_type('post_tag', 'cobertura');
+    register_post_type('cobertura', // Register Custom Post Type
+        array(
+        'labels' => array(
+            'name' => __('Cobertura', 'html5blank'), // Rename these to suit
+            'singular_name' => __('Cobertura Custom Post', 'html5blank'),
+            'add_new' => __('Agregar Nuevo', 'html5blank'),
+            'add_new_item' => __('Agregar Nuevo Miembro al Cobertura', 'html5blank'),
+            'edit' => __('Editar', 'html5blank'),
+            'edit_item' => __('Edit Cobertura Custom Post', 'html5blank'),
+            'new_item' => __('New Cobertura Custom Post', 'html5blank'),
+            'view' => __('View Cobertura Custom Post', 'html5blank'),
+            'view_item' => __('View Cobertura Custom Post', 'html5blank'),
+            'search_items' => __('Search Cobertura Custom Post', 'html5blank'),
+            'not_found' => __('No Cobertura Custom Posts found', 'html5blank'),
+            'not_found_in_trash' => __('No Cobertura Custom Posts found in Trash', 'html5blank')
         ),
         'public' => true,
         'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages

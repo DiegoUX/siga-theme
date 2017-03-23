@@ -54,6 +54,16 @@
 		    top: 415px;
 		}
 	}	
+
+	.recursos {
+	    .descargas {
+			.tab-content {
+				.item-map, .item-poster {
+				  width: 50%;
+				}
+			}
+	    }
+	}
 }
 
 @media only screen and (max-width:767px) {
@@ -158,6 +168,33 @@
 		    margin-top: 20px;
 		}
 	}
+}
+
+@media only screen and (max-width:768px) {
+
+  .recursos {
+    
+    .formatos {
+      .formato-item {
+        margin-bottom: 50px;
+      }
+    }
+
+    .descargas {
+      .tab-content {
+        .item-map, .item-poster {
+          width: 50%;
+        }
+        .filter-posters, .filter-maps {
+          select {
+            margin: 10px 10px;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
 }
 
 @media only screen and (min-width:576px) and (max-width:768px) {
