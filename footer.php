@@ -23,16 +23,16 @@
 				<div class="bottom-foo">
 					<div class="container">
 						<div class="row">
-							<div class="col-md-6">
+							<div class="col-md-12">
 								<!-- copyright -->
 								<p class="copyright">
 									&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>
 								</p>
 								<!-- /copyright -->
 							</div>	
-							<div class="col-md-6 credit">
+							<!-- <div class="col-md-6 credit">
 								<p>Este sitio es una creación de  <a href="http://tapirus.com.ar" target="_blank" class="tcolor">T a p i r u s</a></p>
-							</div>
+							</div> -->
 						</div>
 					</div>
 				</div>

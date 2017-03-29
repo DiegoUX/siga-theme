@@ -1,4 +1,11 @@
 @media only screen and (max-width:991px) {
+	
+	.square-hero-page {
+		br {
+			display: none;
+		}
+	}
+
 	.services {
 		
 		.two-top-services {
@@ -152,6 +159,41 @@
 		}
 	}
 
+	.quienes-somos {
+		.main-activities {
+			.no-p {
+				margin-bottom: 40px;
+			}
+		}
+	}
+
+	.trabajos {
+		.og-expander {
+
+			.og-expander-inner {
+				padding: 50px 0;
+
+				.og-fullimg {
+					width: 100%;
+
+					img {
+						height: auto !important;
+					}
+				}
+
+				.og-details {
+					width: 100%;
+					margin-top: 15px;
+
+					h3 {
+						line-height: normal;
+					}
+				}
+			}
+		}
+		
+	}
+
 	footer {
 		
 		.form-contacto {
@@ -208,10 +250,47 @@
 }
 
 @media only screen and (max-width:575px) {
+
+	.page-billboard {
+		.square-hero-page {
+			padding: 40px 10px;
+
+			h1 {
+				margin-bottom: 0;
+			}
+
+			h4 {
+				display: none;
+			}
+		}	
+	}
+
 	.services {
 		.mbl-mgn {
 			p {
 				padding: 0 35px;
+			}
+		}
+	}
+
+	.recursos .descargas .nav-tabs li.nav-item a.nav-link {
+		font-size: 15px;
+	}
+
+	.recursos .descargas .tab-content ul.cobertura-list .formatos-disponibles .format-link {
+		width: 45%;
+	}
+
+	.recursos .descargas .tab-content ul.cobertura-list li.header-coberturas, 
+	.recursos .descargas .tab-content ul.cobertura-list li .cob-row {
+	    padding: 25px 10px 20px;
+	}
+
+	footer {
+		.bottom-foo {
+			.copyright {
+				text-align: center;
+				line-height: normal;
 			}
 		}
 	}

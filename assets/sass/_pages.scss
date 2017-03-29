@@ -84,7 +84,8 @@
 
 	.intro-equipo {
 		text-align: center;
-		padding: 70px 0;
+		padding-top: 70px;
+		padding-bottom: 70px;
 	}
 
 	.profiles {
@@ -169,6 +170,13 @@
 
 // Servicios
 .servicios {
+
+	.anchor-c {
+		display:block;
+		height:168px; /* this is the height of your header */
+		margin-top:-168px; /* this is again negative value of the height of your header */
+		visibility:hidden;
+	}
 
 	.btn {
 		display: inline-block;
@@ -434,8 +442,10 @@
 		#portfolio-filter {
 			border-bottom: none !important;
 			margin-top: 20px;
+			text-align: center;
 
 			li {
+				margin-bottom: 20px;
 
 				a {
 					text-transform: uppercase;
