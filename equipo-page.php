@@ -64,7 +64,7 @@
 			<div class="row">
 				<div class="intro-equipo col-md-10 offset-md-1">
 					<h2>El Equipo de Siga Proyungas</h2>
-					<h4>Dolor sit amet, vix deleniti maiestatis no, cu summo adversarium consectetuer vis. Duo falli quodsi eripuit ne. In assum ignota indoctum usu, est ei sale rebum voluptatibus, eu quo iusto mnesarchum. Pro quis magna regione eu. Vis ex choro saepe. Ubique blandit cu duo. Placerat adipiscing te vis, fastidii legendos vel in, ea nobis feugait praesent mea.</h4>
+					<h4>Somos un grupo interdisciplinario que trabajamos aportando desde nuestra experiencia y capacidades para llevar adelante cada uno de nuestros proyectos.</h4>
 				</div>
 			</div><!-- /.row -->	
 			<div class="profiles" id="accordion" aria-multiselectable="true">
@@ -131,7 +131,7 @@
 				<div class="row">
 					<div class="col-md-9">
 						<h2>Descargá recursos gratuitos</h2>
-						<h4>Accedé de forma gratuita a mapas y archivos GIS del subtrópico de Argentina. Optimizá tu proyecto con información precisa y actualizada de la región.</h4>
+						<h4>Accedé de forma gratuita a mapas y archivos SIG del subtrópico de Argentina. Optimizá tu proyecto con información precisa y actualizada de la región.</h4>
 					</div>
 					<div class="col-md-3 tac">
 						<a href="/recursos" class="btn btn-invert">Recursos</a>

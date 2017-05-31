@@ -458,8 +458,8 @@
                 <div class="col-md-5 descargar-wms">
                   <i class="icon icon-descargar"></i>
                   <h3>DESCARGAR WMS</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ullam nulla quo obcaecati repudiandae sit labore et ratione eligendi maxime!</p>
-                  <a href="http://www.dropbox.com/sigaproyungas/wms">www.dropbox.com/sigaproyungas/wms</a>
+                  <p><?php echo get_post_meta($pagePostID, 'descargarWMS', true); ?></p>
+                  <a href="<?php echo get_post_meta($pagePostID, 'linkWMS', true); ?>" target="_blank"><?php echo get_post_meta($pagePostID, 'linkWMS', true); ?></a>
                 </div>
               </div>
                   
@@ -478,7 +478,7 @@
               </div>
             </div>
             <div class="col-xl-3 col-lg-3 acomp-link">
-              <a class="btn btn-invert" href="nos-acompanan">Nos Acompañan</a>
+              <a class="btn btn-invert" href="nos-acompanan">Mirá Quienes Nos Acompañan</a>
             </div>
           </div>  
         </div>  

@@ -70,7 +70,7 @@
 		background: url('../../img/siga-info.jpg') no-repeat scroll right bottom #647686;
 		background-size: cover;
 		padding: 70px 0;
-		height: 550px;
+		height: 500px;
 
 		h2 {
 			color: $beige;
@@ -148,7 +148,7 @@
 
 				p {
 					font-size: 14px;
-				    line-height: 20px;
+				    line-height: 25px;
 				    margin: 20px 0 30px;
 				}
 
@@ -256,6 +256,23 @@
 			margin-bottom: 20px;
 		}
 
+		ul {
+			margin: 25px 0 40px;
+			display: block;
+
+			li {
+
+				margin-bottom: 15px;
+				font-size: 18px;
+				line-height: 24px;
+				
+				span.icon {
+					color: $orange;
+					padding-right: 8px;
+				}
+			}
+		}
+
 		img {
 			width: 100%;
 			margin-top: 75px;
@@ -270,7 +287,7 @@
 		background: url('../../img/servicios-capacitacion.jpg') no-repeat scroll right center #487125;
 		background-size: cover;
 		padding: 70px 0;
-		height: 580px;
+		height: 420px;
 
 		h2 {
 			text-transform: uppercase;
